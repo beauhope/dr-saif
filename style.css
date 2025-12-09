@@ -1,0 +1,131 @@
+/* style.css */
+
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;800&display=swap');
+
+body {
+    font-family: 'Cairo', sans-serif;
+    margin: 0;
+    background: linear-gradient(135deg, #f4f7f8, #e0e7ea);
+    color: #333;
+    direction: rtl;
+}
+
+header {
+    background: linear-gradient(90deg, #003366, #005599);
+    color: white;
+    padding: 2rem;
+    text-align: center;
+    border-bottom: 5px solid #ffcc00;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5rem;
+}
+
+header p {
+    margin-top: 0.5rem;
+    font-size: 1.2rem;
+}
+.banner {
+  background: linear-gradient(to left, #0f2027, #203a43, #2c5364);
+  color: white;
+  padding: 50px 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.banner-content {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  max-width: 1000px;
+  gap: 30px;
+}
+
+.banner-content .image img {
+  width: 180px;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 3px solid white;
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.2);
+}
+
+.banner-content .text {
+  text-align: right;
+}
+
+
+nav {
+    background: #004080;
+    text-align: center;
+    padding: 1rem 0;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #ffcc00;
+}
+
+main {
+    padding: 2rem 10%;
+}
+
+section {
+    background: white;
+    margin-bottom: 2rem;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+section h2 {
+    color: #004080;
+    border-bottom: 2px solid #eee;
+    padding-bottom: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+section ul {
+    padding-right: 1rem;
+    line-height: 1.8;
+}
+
+footer {
+    text-align: center;
+    padding: 1rem;
+    background: #003366;
+    color: white;
+    margin-top: 2rem;
+    font-size: 0.9rem;
+}
+
+/* أيقونات إضافية عند الحاجة */
+section ul li::before {
+    content: "\2022";
+    color: #005599;
+    font-weight: bold;
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
+}
