@@ -233,3 +233,27 @@ footer {
 #zayed a.button-link:hover {
   background: #005599;
 }
+/* تصغير عنوان الدكتور على الشاشات الصغيرة */
+@media (max-width: 600px) {
+  header h1 {
+    font-size: 1.7rem !important;
+  }
+
+  header p {
+    font-size: 1rem !important;
+  }
+}
+/* تحسين عرض صورة نموذج زايد على الموبايل */
+#zayed img {
+  max-width: 90%;
+  height: auto;
+  margin: 0 auto;
+  display: block;
+}
+
+/* تصغير الصورة أكثر على الشاشات الصغيرة جدًا */
+@media (max-width: 600px) {
+  #zayed img {
+    max-width: 70%;
+  }
+}
