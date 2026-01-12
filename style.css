@@ -53,6 +53,40 @@ body {
   border-radius: 50%;
   border: 3px solid #fff;
 }
+.section-nav {
+  background-color: #003c71; /* أزرق غامق */
+  border-radius: 10px;
+  margin: 20px auto;
+  padding: 15px;
+  max-width: 800px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.section-nav-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+}
+
+.section-nav-list li {
+  margin: 10px 0;
+}
+
+.section-nav-list li a {
+  color: #fff;
+  font-weight: bold;
+  font-size: 18px;
+  text-decoration: none;
+  display: inline-block;
+  padding: 10px 15px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.section-nav-list li a:hover {
+  background-color: #005da3;
+  border-radius: 6px;
+}
 
 
 /* الأقسام */
@@ -67,6 +101,13 @@ body {
 
 
 /* شريط التنقل */
+
+.nav-icon {
+  width: 24px;
+  height: 24px;
+  vertical-align: middle;
+}
+
 .main-nav {
   background-color: #003b67;
   text-align: center;
@@ -123,13 +164,15 @@ body {
 }
 
 /* البورتفوليو */
+
 .portfolio {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  gap: 1rem;
-  margin-top: 2rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+  justify-items: center;
+  margin-top: 30px;
 }
+
 
 .thumb-card {
   width: 200px;
@@ -255,4 +298,79 @@ footer {
     font-size: 1.1rem;
     padding: 0 1rem;
   }
+}
+
+.section-icon {
+  width: 130px;
+  display: block;
+  margin: 25px auto;
+}
+.specialization-content details {
+  margin-bottom: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background: #fdfdfd;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+  padding: 10px;
+}
+
+.specialization-content summary {
+  font-weight: bold;
+  font-size: 1.1rem;
+  cursor: pointer;
+  padding: 10px;
+  background-color: #f1f4fb;
+  border-radius: 6px;
+}
+
+.specialization-content summary:hover {
+  background-color: #dbe6fb;
+}
+
+.specialization-intro, .specialization-content, .work-teams, .diplomas-courses {
+  max-width: 900px;
+  margin: 0 auto 40px auto;
+  padding: 0 20px;
+  line-height: 2;
+  text-align: justify;
+}
+
+.specialization-content ul.custom-list {
+  list-style-type: "✅ ";
+  padding-right: 20px;
+  direction: rtl;
+}
+
+.specialization-content li {
+  margin-bottom: 15px;
+  font-size: 1.05em;
+}
+
+.specialization-content {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: justify;
+  line-height: 2;
+  font-size: 1.1em;
+  padding: 0 20px;
+}
+.scroll-top-btn {
+  position: fixed;
+  bottom: 40px;
+  left: 30px;
+  background-color: #004070;
+  color: white;
+  padding: 12px 16px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-size: 18px;
+  z-index: 99;
+  transition: background-color 0.3s;
+}
+
+.scroll-top-btn:hover {
+  background-color: #0066aa;
+}
+html {
+  scroll-behavior: smooth;
 }
