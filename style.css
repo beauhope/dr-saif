@@ -7,6 +7,23 @@ body {
   background-color: #f5f7fa;
   color: #222;
 }
+/* 1) استيراد خط عربي واضح ومميز */
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800&display=swap');
+
+/* 2) توحيد الخط على كامل الموقع */
+html, body {
+  font-family: "Cairo", sans-serif;
+}
+
+/* 3) ضمان أن كل العناصر ترث نفس الخط (مهم للأزرار والنماذج) */
+*,
+button,
+input,
+select,
+textarea {
+  font-family: inherit;
+}
+
 
 /* البانر */
 .banner {
@@ -161,6 +178,7 @@ body {
   color: #003b64;
   font-size: 1.5rem;
   margin-bottom: 1rem;
+  text-align: center;
 }
 
 /* البورتفوليو */
@@ -243,9 +261,10 @@ body {
 
 
 /* التواصل */
-.contact p {
+.contact  p {
   font-size: 1.1rem;
   color: #003b64;
+ text-align: center; 
 }
 
 /* الفوتر */
