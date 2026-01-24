@@ -576,3 +576,70 @@ html {
 .social-icons a:hover img {
   transform: scale(1.15);
 }
+/* =========================================================
+   تمييز الأرقام (Numbers Highlight)
+   ========================================================= */
+
+/* النمط الأساسي للأرقام */
+.num-highlight {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  min-width: 36px;
+  height: 28px;
+  padding: 0 10px;
+  margin: 0 4px;
+
+  border-radius: 999px;
+  background: linear-gradient(135deg, #0b3c68, #0f5fa8);
+  color: #ffffff;
+
+  font-weight: 700;
+  font-size: 0.95em;
+  line-height: 1;
+
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+  vertical-align: middle;
+  white-space: nowrap;
+}
+
+/* نسخة ذهبية للأرقام الكبيرة أو النِّسب */
+.num-highlight.gold {
+  background: linear-gradient(135deg, #c7922c, #e0b24a);
+  color: #1a1a1a;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.18);
+}
+
+/* تحسين القراءة داخل القوائم */
+.custom-list li .num-highlight {
+  margin-inline: 6px;
+}
+
+/* =========================================================
+   تحسينات العرض على الموبايل
+   ========================================================= */
+@media (max-width: 768px) {
+  .num-highlight {
+    min-width: 32px;
+    height: 26px;
+    font-size: 0.9em;
+    padding: 0 8px;
+  }
+}
+
+/* =========================================================
+   تحسينات طفيفة للـ accordion (اختياري لكنها موصى بها)
+   ========================================================= */
+.academic-accordion summary,
+details > summary {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+details > summary::after {
+  float: none;
+  margin-inline-start: auto;
+}
