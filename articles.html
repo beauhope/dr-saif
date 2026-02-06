@@ -11,6 +11,8 @@
   <link rel="stylesheet" href="style.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
 </head>
+<script src="articles-sort.js"></script>
+
 <body>
 <div id="top"></div>
 <a href="#top" class="scroll-top-btn">↑ </a>
@@ -41,7 +43,7 @@
   </nav>
 
   <!-- قسم المقالات -->
-  <Main ><center>
+  <Main >
   <div class="floating-icons">
   <a href="index.html" title="الصفحة الرئيسية">
     <img src="images/home-icon.png" alt="Home" />
@@ -53,93 +55,132 @@
 
   <section class="section articles-section">
       <h2><center>المقالات الفكرية والثقافية الرسمية</center></h2>
+  <div class="articles-meta" id="articlesMeta"></div>
   <div class="media-list">
 
+<div class="media-item"><i class="fas fa-newspaper"></i><a href="https://www.albayan.ae/opinions/articles/836330" target="_blank">إرث زايد في الابتكار والتطوير الوطني</a><span> – البيان – 5/02/2025</span></div>
 
 
-<div class="media-item"><i class="fas fa-newspaper"></i><a href="https://www.albayan.ae/opinions/articles/836330" target="_blank">متحف زايد الوطني.. إرث المؤسس</a><span> – البيان – 7/011/2025</span></div>
+<div class="media-item" data-date="2025-02-05" >
+  <i class="fas fa-newspaper"></i>
+  <a href="https://www.albayan.ae/opinions/articles/836330" target="_blank">إرث زايد في الابتكار والتطوير الوطني</a>
+  <span> – البيان – 5/02/2025</span>
+</div>
 
-<div class="media-item"><i class="fas fa-newspaper"></i><a href="https://www.albayan.ae/opinions/articles/2023-06-26-1.4686652" target="_blank">السرد الاستراتيجي.. ممارسة رائدة في علم الاستراتيجية</a><span> – البيان – 26/06/2023</span></div>
-<div class="media-item"><i class="fas fa-newspaper"></i><a href="https://www.albayan.ae/opinions/articles/2023-05-02-1.4656247" target="_blank">الرؤية</a><span> – البيان – 02/05/2023</span></div>
-<div class="media-item"><i class="fas fa-newspaper"></i><a href="https://www.albayan.ae/opinions/articles/2023-06-21-1.4684046" target="_blank">القيم</a><span> – البيان – 21/06/2023</span></div>
-<div class="media-item"><i class="fas fa-newspaper"></i><a href="https://www.albayan.ae/opinions/articles/2023-05-24-1.4668270" target="_blank">فريق العمل</a><span> – البيان – 24/05/2023</span></div>
-<div class="media-item"><i class="fas fa-newspaper"></i><a href="https://www.albayan.ae/opinions/articles/2023-05-10-1.4660679" target="_blank">ثقافة التخطيط</a><span> – البيان – 10/05/2023</span></div>
-<div class="media-item"><i class="fas fa-newspaper"></i><a href="https://www.albayan.ae/opinions/articles/2023-07-25-1.4700873" target="_blank">التفكير الجماعي</a><span> – البيان – 25/07/2023</span></div>
-<div class="media-item"><i class="fas fa-newspaper"></i><a href="https://www.albayan.ae/opinions/articles/2023-08-06-1.4706434" target="_blank">الفكر والإستثمار</a><span> – البيان – 06/08/2023</span></div>
-<div class="media-item"><i class="fas fa-newspaper"></i><a href="https://www.albayan.ae/opinions/articles/2023-05-04-1.4657589" target="_blank">التحليل البيئي</a><span> – البيان – 04/05/2023</span></div>
-<div class="media-item"><i class="fas fa-newspaper"></i><a href="https://www.albayan.ae/opinions/articles/2023-08-27-1.4716635" target="_blank">الأجيال القادمة</a><span> – البيان – 27/08/2023</span></div>
-<div class="media-item"><i class="fas fa-newspaper"></i><a href="https://www.albayan.ae/opinions/articles/2023-06-08-1.4676755" target="_blank">استشراف المستقبل</a><span> – البيان – 08/06/2023</span></div>
-<div class="media-item"><i class="fas fa-newspaper"></i><a href="https://www.albayan.ae/opinions/articles/2023-07-03-1.4689877" target="_blank">تحليل الفجوة</a><span> – البيان – 03/07/2023</span></div>
-<div class="media-item"><i class="fas fa-newspaper"></i><a href="https://www.albayan.ae/opinions/articles/2023-07-17-1.4696582" target="_blank">إدارة المخاطر</a><span> – البيان – 17/07/2023</span></div>
-<div class="media-item"><i class="fas fa-newspaper"></i><a href="https://www.albayan.ae/opinions/2023-09-05-1.4721750" target="_blank">زايد.. والقيادة الاستراتيجية</a><span> – البيان – 05/09/2023</span></div>
-<div class="media-item"><i class="fas fa-newspaper"></i><a href="https://www.albayan.ae/opinions/articles/2023-05-30-1.4671732" target="_blank">الشراكات الخارجية</a><span> – 30/05/2023 -البيان </span></div>
-<div class="media-item"><i class="fas fa-newspaper"></i><a href="https://www.albayan.ae/opinions/articles/2023-05-18-1.4665036" target="_blank">صناعة القرار</a><span> –18/05/2023 -البيان</span></div>
-<div class="media-item"><i class="fas fa-newspaper"></i><a href="https://www.albayan.ae/opinions/articles/2023-05-15-1.4663182" target="_blank">صياغة الأهداف</a><span> – 15/05/2023 - البيان</span></div>
-<div class="media-item"><i class="fas fa-newspaper"></i><a href="https://www.albayan.ae/opinions/articles/2023-06-02-1.4673622" target="_blank">تنفيذ الخطط</a><span> – البيان – 02/06/2023</span></div>
-<div class="media-item"><i class="fas fa-newspaper"></i><a href="https://www.albayan.ae/opinions/articles/2023-09-08-1.4723485" target="_blank">زايد وتمكين التخطيط</a><span> – البيان – 08/09/2023</span></div>
-<div class="media-item"><i class="fas fa-newspaper"></i><a href="https://www.albayan.ae/opinions/articles/2023-06-12-1.4678749" target="_blank">المسؤولية والمحاسبة</a><span> - البيان -12/06/2023</span></div>
-<div class="media-item"><i class="fas fa-newspaper"></i><a href="https://www.albayan.ae/opinions/articles/2023-06-18-1.4682310" target="_blank">التنمية المستدامة</a><span> –  البيان- 18/06/2023</span></div>
-<div class="media-item"><i class="fas fa-newspaper"></i><a href="https://www.albayan.ae/opinions/articles/2023-08-14-1.4709959" target="_blank">القيادة الإنسانية</a><span> – البيان – 05/09/2023</span></div>
-<div class="media-item"><i class="fas fa-newspaper"></i><a href="https://www.albayan.ae/opinions/articles/2023-07-12-1.4694321" target="_blank">إدارة التغيير</a><span> –البيان- 12/07/2023</span></div>
-<div class="media-item"><i class="fas fa-newspaper"></i><a href="https://www.albayan.ae/opinions/articles/2023-08-17-1.4711647" target="_blank">استدامة التقدم</a><span> –البيان - 17/08/2023</span></div>
-<div class="media-item"><i class="fas fa-newspaper"></i><a href="https://www.albayan.ae/opinions/articles/2023-07-09-1.4692819" target="_blank">صناعة القادة</a><span> –البيان - 09/07/2023</span></div>
-<div class="media-item"><i class="fas fa-newspaper"></i><a href="https://www.albayan.ae/opinions/articles/2023-08-09-1.4707838" target="_blank">القوة الناعمة</a><span> –البيان - 09/08/2023</span></div>
-<div class="media-item"><i class="fas fa-newspaper"></i><a href="https://www.albayan.ae/opinions/articles/2023-08-22-1.4714226" target="_blank">نابغة العرب</a><span> –البيان - 22/08/2023</span></div>
-<div class="media-item"><i class="fas fa-newspaper"></i><a href="https://www.albayan.ae/opinions/articles/2023-07-20-1.4698474" target="_blank">تمكين الشباب</a><span> –البيان - 20/07/2023</span></div>
-<div class="media-item"><i class="fas fa-newspaper"></i><a href="https://www.albayan.ae/opinions/articles/2023-07-31-1.4703819" target="_blank">التنافسية في التعليم</a><span> –البيان - 31/07/2023</span></div>
-<div class="media-item"><i class="fas fa-newspaper"></i><a href="https://www.albayan.ae/opinions/articles/2023-05-08-1.4659786" target="_blank">علم ينتفع به</a><span> –البيان - 08/05/2023</span></div>
-<div class="media-item"><i class="fas fa-newspaper"></i><a href="https://www.albayan.ae/opinions/articles/2023-09-12-1.4725744" target="_blank">زايد والمجلس الوطني</a><span> –البيان - 12/09/20233</span></div>
-<div class="media-item"><i class="fas fa-newspaper"></i><a href="https://www.albayan.ae/opinions/articles/2024-03-19-1.4841448" target="_blank">الوحدة والتضامن في فكر القائد المؤسس</a><span> –البيان - 19/03/2023</span></div>
-<div class="media-item"><i class="fas fa-newspaper"></i><a href="https://www.albayan.ae/opinions/articles/2024-02-17-1.4821860" target="_blank">زايد والقمة العالمية للحكومات</a><span> –البيان - 17/02/2024</span></div>
-<div class="media-item"><i class="fas fa-newspaper"></i><a href="https://www.albayan.ae/opinions/articles/2023-12-18-1.4786172" target="_blank">«كوب 28» مسار «زايد» للاستدامة والمناخ</a><span> –اليان - 18/12/2023</span></div>
-<div class="media-item"><i class="fas fa-newspaper"></i><a href="https://www.albayan.ae/opinions/articles/2023-12-01-1.4774634" target="_blank">زوايا استراتيجية لا تحصى ... باتحاد زايد</a><span> – البيان – 05/09/2023</span></div>
-<div class="media-item"><i class="fas fa-newspaper"></i><a href="https://www.albayan.ae/opinions/articles/2023-11-10-1.4761376" target="_blank">زايد وقيادة المشاريع الاستراتيجية</a><span> –  البيان -10/11/2023</span></div>
-<div class="media-item"><i class="fas fa-newspaper"></i><a href="https://www.albayan.ae/opinions/articles/2023-11-02-1.4756375" target="_blank">السرد الاستراتيجي للمؤسس «نوحد الراية»</a><span> –البيان - 02/11/2023</span></div>
-<div class="media-item"><i class="fas fa-newspaper"></i><a href="https://www.albayan.ae/opinions/articles/2023-10-16-1.4745781" target="_blank">السرد الاستراتيجي للمؤسس «الإقدام والحكمة»</a><span> –البيان - 16/10/2023</span></div>
-<div class="media-item"><i class="fas fa-newspaper"></i><a href="https://www.albayan.ae/opinions/articles/2023-10-05-1.4739662" target="_blank">التراث.. المدخل الاستراتيجي لرؤية زايد</a><span> –البيان - 05/10/2023</span></div>
-<div class="media-item"><i class="fas fa-newspaper"></i><a href="https://www.albayan.ae/opinions/articles/2023-10-01-1.4736949" target="_blank">العمق الوجودي بين زايد وشعبه</a><span> – البيان - 01/10/2023</span></div>
-<div class="media-item"><i class="fas fa-newspaper"></i><a href="https://www.albayan.ae/opinions/articles/2024-02-02-1.4811941" target="_blank">حوار استراتيجي للقائد المؤسس.. «الإنتاج الزراعي»</a><span> –البيان - 02/02/2024</span></div>
-<div class="media-item"><i class="fas fa-newspaper"></i><a href="https://www.albayan.ae/opinions/articles/2024-01-15-1.4800913" target="_blank">بالعِبرة يصل «زايد» بريادة الاتحاد</a><span> – البيان -11/10/2023</span></div>
-<div class="media-item"><i class="fas fa-newspaper"></i><a href="https://www.albayan.ae/opinions/articles/2023-10-11-1.4742923" target="_blank">السرد الاستراتيجي.. «نهج زايد»</a><span> – البيان – 05/09/2023</span></div>
-<div class="media-item"><i class="fas fa-newspaper"></i><a href="https://www.albayan.ae/opinions/articles/2023-09-20-1.4730804" target="_blank">استراتيجية زايد لاستكشاف الفضاء</a><span> –البيان - 20/09/2023</span></div>
-<div class="media-item"><i class="fas fa-newspaper"></i><a href="https://www.albayan.ae/opinions/articles/2023-09-18-1.4729296" target="_blank">إرث زايد الإنساني ثروة استراتيجية</a><span> –البيان -08/08/20243</span></div>
-<div class="media-item"><i class="fas fa-newspaper"></i><a href="https://www.albayan.ae/opinions/articles/2024-08-08-1.4916199" target="_blank">السرد الاستراتيجي للمؤسس.. «مؤشرات الأداء»</a><span> – البيان – 05/09/2023</span></div>
-<div class="media-item"><i class="fas fa-newspaper"></i><a href="https://www.albayan.ae/opinions/articles/2024-07-30-1.4912184" target="_blank">السرد الاستراتيجي للمؤسس.. «إدارة المعرفة»</a><span> –البيان - 30/07/2024</span></div>
-<div class="media-item"><i class="fas fa-newspaper"></i><a href="https://www.albayan.ae/opinions/articles/2024-07-24-1.4909080" target="_blank">الرمزية والسردية ليوم عهد الاتحاد</a><span> –البيان - 14/07/2024</span></div>
-<div class="media-item"><i class="fas fa-newspaper"></i><a href="https://www.albayan.ae/opinions/articles/2024-07-02-1.4898710" target="_blank">حوارات زايد الاستراتيجية بمرحلة التأسيس</a><span> – البيان – 05/09/2023</span></div>
-<div class="media-item"><i class="fas fa-newspaper"></i><a href="https://www.albayan.ae/opinions/articles/2024-06-14-1.4889838" target="_blank">قيمة العلم برؤية زايد</a><span> – البيان -14/06/2024</span></div>
-
-<div class="media-item"><i class="fas fa-newspaper"></i><a href="https://www.albayan.ae/opinions/articles/2024-05-20-1.4875491" target="_blank">ثلاثة محاور بنموذج زايد للتأسيس</a><span> –البيان - 20/05/2024</span></div>
-<div class="media-item"><i class="fas fa-newspaper"></i><a href="https://www.albayan.ae/opinions/articles/2024-05-06-1.4867796" target="_blank">السرد الاستراتيجي للمؤسس.. «التجارب والدروس»</a><span> –البيان - 06/05/2024</span></div>
-<div class="media-item"><i class="fas fa-newspaper"></i><a href="https://www.albayan.ae/opinions/articles/2024-05-01-1.4864761" target="_blank">رؤية زايد.. «معادلة الثروة والمسؤولية الوطنية»</a><span> –البيان - 01/05/2024</span></div>
-
-<div class="media-item"><i class="fas fa-newspaper"></i><a href="https://www.albayan.ae/opinions/articles/2024-04-22-1.4859312" target="_blank">السرد الاستراتيجي للمؤسس.. «المتابعة القيادية»</a><span> –البيان - 22/04/2024</span></div>
-<div class="media-item"><i class="fas fa-newspaper"></i><a href="https://www.albayan.ae/opinions/articles/2024-04-16-1.4856670" target="_blank">منهاج زايد.. القدوة أساس التخطيط</a><span> –البيان - 16/04/2024</span></div>
-<div class="media-item"><i class="fas fa-newspaper"></i><a href="https://www.albayan.ae/opinions/articles/2024-03-19-1.4841448" target="_blank">الوحدة والتضامن في فكر القائد المؤسس</a><span> –البيان - 19/03/2024</span></div>
-
-<div class="media-item"><i class="fas fa-newspaper"></i><a href="https://www.albayan.ae/opinions/writing-star/2021-09-23-1.4253588" target="_blank">الإمارات مركز صناعة المستقبل</a><span> –23/09/2021</span></div>
-
-<div class="media-item"><i class="fas fa-newspaper"></i><a href="https://www.albayan.ae/opinions/articles/2021-07-06-1.4202370" target="_blank">تحليل البيئة الخارجية PESTEL وأثرها في المنظومة الاستراتيجية</a><span> –6/7/2021</span></div>
-
-<div class="media-item"><i class="fas fa-newspaper"></i><a href="https://www.albayan.ae/opinions/articles/2021-06-20-1.4190774" target="_blank">ما هي فرص التحسين في تحليل swot وانعكاساتها على المنظومة الاستراتيجية؟</a><span> –البيان - 20/6/2021</span></div>
+<div class="media-item" data-date="2025-11-07" ><i class="fas fa-newspaper"></i><a href="https://www.albayan.ae/opinions/articles/25309" target="_blank">متحف زايد الوطني.. إرث المؤسس</a><span> – البيان – 7/011/2025</span></div>
 
 
-<div class="media-item"><i class="fas fa-newspaper"></i><a href="https://www.albayan.ae/opinions/articles/2021-06-14-1.4186249" target="_blank">ما هي التحديات في تحليل swot وانعكاساتها على المنظومة الإستراتيجية</a><span>  البيان - 14/06/2021</span></div>
+<div class="media-item" data-date="2021-07-18" ><i class="fas fa-newspaper"></i><a href="https://www.albayan.ae/opinions/articles/2021-07-19-1.4210399" target="_blank">"لا تشلون هم".. كلمة استراتيجية قبل أن تكون لغوية</a><span> – البيان – 18/07/2021</span></div>
+<div class="media-item" data-date="2021-08-01"><i class="fas fa-newspaper"></i><a href="https://www.albayan.ae/opinions/articles/2021-08-01-1.4218769" target="_blank">الغزو الفكري من خلال الإدمان التقني</a><span> – البيان – 1/08/2021</span></div>
+<div class="media-item" data-date="2021-08-04"><i class="fas fa-newspaper"></i><a href="https://www.albayan.ae/opinions/articles/2021-08-04-1.4220792" target="_blank">خطر الأيديولوجيا السلبية وطرق التحصين منها</a><span> – البيان – 4/08/2021</span></div>
+<div class="media-item" data-date="2021-09-02"><i class="fas fa-newspaper"></i><a href="https://www.albayan.ae/opinions/articles/2021-09-02-1.4239416" target="_blank">الأولويات وارتباطاتها بمحركات المنظومة الاستراتيجية</a><span> – البيان – 2/09/2021</span></div>
+<div class="media-item" data-date="2021-10-11"><i class="fas fa-newspaper"></i><a href="https://www.albayan.ae/opinions/articles/2021-10-11-1.4268656" target="_blank">لماذا يتنافس العالم لزيارة «إكسبو 2020»</a><span> – البيان – 11/10/2021</span></div>
+<div class="media-item"data-date="2021-11-20"><i class="fas fa-newspaper"></i><a href="https://www.albayan.ae/opinions/articles/2021-11-20-1.4303540" target="_blank">صناعة الأمن الفكري</a><span> – البيان – 20/11/2021</span></div>
+<div class="media-item"data-date="2021-12-20"><i class="fas fa-newspaper"></i><a href="https://www.albayan.ae/opinions/articles/2021-12-20-1.4328789" target="_blank">مسارات الغزو الثقافي</a><span> – البيان – 20/12/2021</span></div>
+<div class="media-item" data-date="2021-12-25"><i class="fas fa-newspaper"></i><a href="https://www.albayan.ae/opinions/articles/2021-12-26-1.4333409" target="_blank">أثر الاستراتيجيات العلاجية والهجومية على المنظومة الاستراتيجية</a><span> – البيان – 25/12/2021</span></div>
+<div class="media-item"data-date="2022-01-11"><i class="fas fa-newspaper"></i><a href="https://www.albayan.ae/opinions/articles/2022-01-11-1.4343928" target="_blank">خطر التغريب الفكري على الأوطان</a><span> – البيان – 11/01/2022</span></div>
+<div class="media-item" data-date="2022-02-14"><i class="fas fa-newspaper"></i><a href="https://www.albayan.ae/opinions/articles/2022-02-14-1.4369632" target="_blank">تصنيف مؤشرات قياس الأداء بالمنظومة الاستراتيجية</a><span> – البيان – 14/02/2022</span></div>
+<div class="media-item"data-date="2022-02-21"><i class="fas fa-newspaper"></i><a href="https://www.albayan.ae/opinions/articles/2022-02-21-1.4374963" target="_blank">صياغة التوجه الاستراتيجي للمنظومة</a><span> – البيان – 21/02/2022</span></div>
+<div class="media-item"data-date="2022-07-15"><i class="fas fa-newspaper"></i><a href="https://www.albayan.ae/opinions/articles/2022-06-15-1.4456834" target="_blank">قائد التمكين وأمين رحلتها.. بصمات استراتيجية</a><span> – البيان – 15/06/2022</span></div>
+<div class="media-item"data-date="2022-06-21"><i class="fas fa-newspaper"></i><a href="https://www.albayan.ae/opinions/articles/2022-07-27-1.4484038" target="_blank">نماذج قياس الأداء الاستراتيجي</a><span> – البيان – 27/07/2022</span></div>
+<div class="media-item"data-date="2022-09-21"><i class="fas fa-newspaper"></i><a href="https://www.albayan.ae/opinions/articles/2022-09-21-1.4519300" target="_blank">استمرارية الأعمال لاستدامة المنظومة الاستراتيجية</a><span> – البيان – 21/09/2022</span></div>
+<div class="media-item"data-date="2022-10-04"><i class="fas fa-newspaper"></i><a href="https://www.albayan.ae/opinions/articles/2022-10-04-1.4528969" target="_blank">أهداف الخطط التشغيلية وأهميتها الاستراتيجية</a><span> – البيان – 4/10/2022</span></div>
+<div class="media-item"data-date="2022-10-20"><i class="fas fa-newspaper"></i><a href="https://www.albayan.ae/opinions/articles/2022-10-06-1.4530793" target="_blank">أهمية مؤشرات الأداء بالمنظومة الاستراتيجية</a><span> – البيان – 6/10/2022</span></div>
+<div class="media-item"data-date="2022-10-20"><i class="fas fa-newspaper"></i><a href="https://www.albayan.ae/opinions/writing-star/2022-10-20-1.4540963" target="_blank">الصحة والسلامة المهنية للمنظومة الاستراتيجية</a><span> – البيان – 20/10/2022</span></div>
+<div class="media-item"data-date="2023-01-04"><i class="fas fa-newspaper"></i><a href="https://www.albayan.ae/opinions/articles/2023-01-04-1.4592165" target="_blank">طرق صياغة مؤشرات الأداء بالمنظومة الاستراتيجية</a><span> – البيان – 4/01/2023</span></div>
+<div class="media-item"data-date="2023-02-07"><i class="fas fa-newspaper"></i><a href="https://www.albayan.ae/opinions/articles/2023-02-07-1.4611399" target="_blank">الغايات الاستراتيجية من جوائز التميز</a><span> – البيان – 7/02/2023</span></div>
+<div class="media-item"data-date="2023-03-08"><i class="fas fa-newspaper"></i><a href="https://www.albayan.ae/opinions/articles/2023-03-08-1.4628154" target="_blank">أدوات الرقابة الاستراتيجية</a><span> – البيان – 8/03/2023</span></div>
+<div class="media-item"data-date="2023-03-18"><i class="fas fa-newspaper"></i><a href="https://www.albayan.ae/opinions/articles/2023-03-18-1.4634018" target="_blank">فوائد الأدلة التشغيلية على المنظومة</a><span> – البيان – 18/03/2023</span></div>
+<div class="media-item"data-date="2023-03-21"><i class="fas fa-newspaper"></i><a href="https://www.albayan.ae/opinions/articles/2023-03-21-1.4635623" target="_blank">تحسين وتطوير العمليات وانعكاساتها الاستراتيجية</a><span> – البيان – 21/03/2023</span></div>
+<div class="media-item"data-date="2024-05-04"><i class="fas fa-newspaper"></i><a href="https://www.albayan.ae/opinions/articles/2023-05-04-1.4657589" target="_blank">السرد الاستراتيجي للمؤسس «التحليل البيئي»</a><span> – البيان – 4/5/2023</span></div>
+<div class="media-item"data-date="2024-06-26"><i class="fas fa-newspaper"></i><a href="https://www.albayan.ae/opinions/articles/2024-06-20-1.4892900" target="_blank">زايد واستراتيجية ثقافة «الفنون والمسرح»</a><span> – البيان – 26/06/2024</span></div>
+<div class="media-item"data-date="2024-10-15"><i class="fas fa-newspaper"></i><a href="https://www.albayan.ae/opinions/articles/2024-08-15-1.4919377" target="_blank">معايير زايد الاستراتيجية للتميز المؤسسي</a><span> – البيان – 15/08/2024</span></div>
+<div class="media-item"data-date="2023-08-26"><i class="fas fa-newspaper"></i><a href="https://www.albayan.ae/opinions/articles/25309" target="_blank">إدارة العمليات</a><span> – البيان – 9/10/2024</span></div>
 
-<div class="media-item"><i class="fas fa-newspaper"></i><a href="https://www.albayan.ae/opinions/articles/2021-06-09-1.4182754" target="_blank">التحليل البيئي الرباعي للمنظومة الاستراتيجية</a><span>  البيان - 09/06/2021</span></div>
-
-<div class="media-item"><i class="fas fa-newspaper"></i><a href="https://www.albayan.ae/opinions/articles/2021-05-19-1.4167252" target="_blank">نبذة تاريخية عن المنظومة الاستراتيجية</a><span>  البيان -19/05/2021</span></div>
 
 
-<div class="media-item"><i class="fas fa-newspaper"></i><a href="https://www.albayan.ae/opinions/articles/676568" target="_blank">زايد والذكاء الاصطناعي.. «التأهيل الرقمي»</a><span>  البيان -12/10/2025</span></div>
+<div class="media-item"data-date="2023-05-02"><i class="fas fa-newspaper"></i><a href="https://www.albayan.ae/opinions/articles/2023-05-02-1.4656247" target="_blank">الرؤية</a><span> – البيان – 02/05/2023</span></div>
+<div class="media-item"data-date="2023-06-21"><i class="fas fa-newspaper"></i><a href="https://www.albayan.ae/opinions/articles/2023-06-21-1.4684046" target="_blank">القيم</a><span> – البيان – 21/06/2023</span></div>
+<div class="media-item"data-date="2023-05-24"><i class="fas fa-newspaper"></i><a href="https://www.albayan.ae/opinions/articles/2023-05-24-1.4668270" target="_blank">فريق العمل</a><span> – البيان – 24/05/2023</span></div>
+<div class="media-item"data-date="2023-05-10"><i class="fas fa-newspaper"></i><a href="https://www.albayan.ae/opinions/articles/2023-05-10-1.4660679" target="_blank">ثقافة التخطيط</a><span> – البيان – 10/05/2023</span></div>
+<div class="media-item"data-date="2023-07-25"><i class="fas fa-newspaper"></i><a href="https://www.albayan.ae/opinions/articles/2023-07-25-1.4700873" target="_blank">التفكير الجماعي</a><span> – البيان – 25/07/2023</span></div>
+<div class="media-item"data-date="2023-08-06"><i class="fas fa-newspaper"></i><a href="https://www.albayan.ae/opinions/articles/2023-08-06-1.4706434" target="_blank">الفكر والإستثمار</a><span> – البيان – 06/08/2023</span></div>
+<div class="media-item"data-date="2023-05-04"><i class="fas fa-newspaper"></i><a href="https://www.albayan.ae/opinions/articles/2023-05-04-1.4657589" target="_blank">التحليل البيئي</a><span> – البيان – 04/05/2023</span></div>
+<div class="media-item"data-date="2023-08-27"><i class="fas fa-newspaper"></i><a href="https://www.albayan.ae/opinions/articles/2023-08-27-1.4716635" target="_blank">الأجيال القادمة</a><span> – البيان – 27/08/2023</span></div>
+<div class="media-item"data-date="2023-06-08"><i class="fas fa-newspaper"></i><a href="https://www.albayan.ae/opinions/articles/2023-06-08-1.4676755" target="_blank">استشراف المستقبل</a><span> – البيان – 08/06/2023</span></div>
+<div class="media-item"data-date="2023-07-03"><i class="fas fa-newspaper"></i><a href="https://www.albayan.ae/opinions/articles/2023-07-03-1.4689877" target="_blank">تحليل الفجوة</a><span> – البيان – 03/07/2023</span></div>
+<div class="media-item"data-date="2023-07-17"><i class="fas fa-newspaper"></i><a href="https://www.albayan.ae/opinions/articles/2023-07-17-1.4696582" target="_blank">إدارة المخاطر</a><span> – البيان – 17/07/2023</span></div>
+<div class="media-item"data-date="2023-09-05"><i class="fas fa-newspaper"></i><a href="https://www.albayan.ae/opinions/2023-09-05-1.4721750" target="_blank">زايد.. والقيادة الاستراتيجية</a><span> – البيان – 05/09/2023</span></div>
+<div class="media-item"data-date="2023-05-30"><i class="fas fa-newspaper"></i><a href="https://www.albayan.ae/opinions/articles/2023-05-30-1.4671732" target="_blank">الشراكات الخارجية</a><span> – 30/05/2023 -البيان </span></div>
+<div class="media-item"data-date="2023-05-18"><i class="fas fa-newspaper"></i><a href="https://www.albayan.ae/opinions/articles/2023-05-18-1.4665036" target="_blank">صناعة القرار</a><span> –18/05/2023 -البيان</span></div>
+<div class="media-item"data-date="2023-05-15"><i class="fas fa-newspaper"></i><a href="https://www.albayan.ae/opinions/articles/2023-05-15-1.4663182" target="_blank">صياغة الأهداف</a><span> – 15/05/2023 - البيان</span></div>
+<div class="media-item"data-date="2023-06-02"><i class="fas fa-newspaper"></i><a href="https://www.albayan.ae/opinions/articles/2023-06-02-1.4673622" target="_blank">تنفيذ الخطط</a><span> – البيان – 02/06/2023</span></div>
+<div class="media-item"data-date="2023-08-8"><i class="fas fa-newspaper"></i><a href="https://www.albayan.ae/opinions/articles/2023-09-08-1.4723485" target="_blank">زايد وتمكين التخطيط</a><span> – البيان – 08/09/2023</span></div>
+<div class="media-item"data-date="2023-09-26"><i class="fas fa-newspaper"></i><a href="https://www.albayan.ae/opinions/articles/2023-06-12-1.4678749" target="_blank">المسؤولية والمحاسبة</a><span> - البيان -12/06/2023</span></div>
+<div class="media-item"data-date="2023-06-18"><i class="fas fa-newspaper"></i><a href="https://www.albayan.ae/opinions/articles/2023-06-18-1.4682310" target="_blank">التنمية المستدامة</a><span> –  البيان- 18/06/2023</span></div>
+<div class="media-item"data-date="2023-09-05"><i class="fas fa-newspaper"></i><a href="https://www.albayan.ae/opinions/articles/2023-08-14-1.4709959" target="_blank">القيادة الإنسانية</a><span> – البيان – 05/09/2023</span></div>
+<div class="media-item"data-date="2023-07-12"><i class="fas fa-newspaper"></i><a href="https://www.albayan.ae/opinions/articles/2023-07-12-1.4694321" target="_blank">إدارة التغيير</a><span> –البيان- 12/07/2023</span></div>
+<div class="media-item"data-date="2023-08-17"><i class="fas fa-newspaper"></i><a href="https://www.albayan.ae/opinions/articles/2023-08-17-1.4711647" target="_blank">استدامة التقدم</a><span> –البيان - 17/08/2023</span></div>
+<div class="media-item"data-date="2023-07-09"><i class="fas fa-newspaper"></i><a href="https://www.albayan.ae/opinions/articles/2023-07-09-1.4692819" target="_blank">صناعة القادة</a><span> –البيان - 09/07/2023</span></div>
+<div class="media-item"data-date="2023-08-09"><i class="fas fa-newspaper"></i><a href="https://www.albayan.ae/opinions/articles/2023-08-09-1.4707838" target="_blank">القوة الناعمة</a><span> –البيان - 09/08/2023</span></div>
+<div class="media-item"data-date="2023-08-22"><i class="fas fa-newspaper"></i><a href="https://www.albayan.ae/opinions/articles/2023-08-22-1.4714226" target="_blank">نابغة العرب</a><span> –البيان - 22/08/2023</span></div>
+<div class="media-item"data-date="2023-07-20"><i class="fas fa-newspaper"></i><a href="https://www.albayan.ae/opinions/articles/2023-07-20-1.4698474" target="_blank">تمكين الشباب</a><span> –البيان - 20/07/2023</span></div>
+<div class="media-item"data-date="2023-07-31"><i class="fas fa-newspaper"></i><a href="https://www.albayan.ae/opinions/articles/2023-07-31-1.4703819" target="_blank">التنافسية في التعليم</a><span> –البيان - 31/07/2023</span></div>
+<div class="media-item"data-date="2023-05-08"><i class="fas fa-newspaper"></i><a href="https://www.albayan.ae/opinions/articles/2023-05-08-1.4659786" target="_blank">علم ينتفع به</a><span> –البيان - 08/05/2023</span></div>
+<div class="media-item"data-date="2023-09-12"><i class="fas fa-newspaper"></i><a href="https://www.albayan.ae/opinions/articles/2023-09-12-1.4725744" target="_blank">زايد والمجلس الوطني</a><span> –البيان - 12/09/20233</span></div>
+<div class="media-item"data-date="2023-03-19"><i class="fas fa-newspaper"></i><a href="https://www.albayan.ae/opinions/articles/2024-03-19-1.4841448" target="_blank">الوحدة والتضامن في فكر القائد المؤسس</a><span> –البيان - 19/03/2023</span></div>
+<div class="media-item"data-date="2024-02-17"><i class="fas fa-newspaper"></i><a href="https://www.albayan.ae/opinions/articles/2024-02-17-1.4821860" target="_blank">زايد والقمة العالمية للحكومات</a><span> –البيان - 17/02/2024</span></div>
+<div class="media-item"data-date="2023-12-18"><i class="fas fa-newspaper"></i><a href="https://www.albayan.ae/opinions/articles/2023-12-18-1.4786172" target="_blank">«كوب 28» مسار «زايد» للاستدامة والمناخ</a><span> –اليان - 18/12/2023</span></div>
+<div class="media-item"data-date="2023-09-05"><i class="fas fa-newspaper"></i><a href="https://www.albayan.ae/opinions/articles/2023-12-01-1.4774634" target="_blank">زوايا استراتيجية لا تحصى ... باتحاد زايد</a><span> – البيان – 05/09/2023</span></div>
+<div class="media-item"data-date="2023-11-10"><i class="fas fa-newspaper"></i><a href="https://www.albayan.ae/opinions/articles/2023-11-10-1.4761376" target="_blank">زايد وقيادة المشاريع الاستراتيجية</a><span> –  البيان -10/11/2023</span></div>
+<div class="media-item"data-date="2023-11-02"><i class="fas fa-newspaper"></i><a href="https://www.albayan.ae/opinions/articles/2023-11-02-1.4756375" target="_blank">السرد الاستراتيجي للمؤسس «نوحد الراية»</a><span> –البيان - 02/11/2023</span></div>
+<div class="media-item"data-date="2023-10-16"><i class="fas fa-newspaper"></i><a href="https://www.albayan.ae/opinions/articles/2023-10-16-1.4745781" target="_blank">السرد الاستراتيجي للمؤسس «الإقدام والحكمة»</a><span> –البيان - 16/10/2023</span></div>
+<div class="media-item"data-date="2023-08-05"><i class="fas fa-newspaper"></i><a href="https://www.albayan.ae/opinions/articles/2023-10-05-1.4739662" target="_blank">التراث.. المدخل الاستراتيجي لرؤية زايد</a><span> –البيان - 05/10/2023</span></div>
+<div class="media-item"data-date="2023-10-26"><i class="fas fa-newspaper"></i><a href="https://www.albayan.ae/opinions/articles/2023-10-01-1.4736949" target="_blank">العمق الوجودي بين زايد وشعبه</a><span> – البيان - 01/10/2023</span></div>
+<div class="media-item"data-date="2024-02-02"><i class="fas fa-newspaper"></i><a href="https://www.albayan.ae/opinions/articles/2024-02-02-1.4811941" target="_blank">حوار استراتيجي للقائد المؤسس.. «الإنتاج الزراعي»</a><span> –البيان - 02/02/2024</span></div>
+<div class="media-item"data-date="2023-10-11"><i class="fas fa-newspaper"></i><a href="https://www.albayan.ae/opinions/articles/2024-01-15-1.4800913" target="_blank">بالعِبرة يصل «زايد» بريادة الاتحاد</a><span> – البيان -11/10/2023</span></div>
+<div class="media-item"data-date="2023-09-05"><i class="fas fa-newspaper"></i><a href="https://www.albayan.ae/opinions/articles/2023-10-11-1.4742923" target="_blank">السرد الاستراتيجي.. «نهج زايد»</a><span> – البيان – 05/09/2023</span></div>
+<div class="media-item"data-date="2023-09-20"><i class="fas fa-newspaper"></i><a href="https://www.albayan.ae/opinions/articles/2023-09-20-1.4730804" target="_blank">استراتيجية زايد لاستكشاف الفضاء</a><span> –البيان - 20/09/2023</span></div>
+<div class="media-item"data-date="2024-08-08"><i class="fas fa-newspaper"></i><a href="https://www.albayan.ae/opinions/articles/2023-09-18-1.4729296" target="_blank">إرث زايد الإنساني ثروة استراتيجية</a><span> –البيان -08/08/2024</span></div>
+<div class="media-item"data-date="2023-09-05"><i class="fas fa-newspaper"></i><a href="https://www.albayan.ae/opinions/articles/2024-08-08-1.4916199" target="_blank">السرد الاستراتيجي للمؤسس.. «مؤشرات الأداء»</a><span> – البيان – 05/09/2023</span></div>
+<div class="media-item"data-date="2024-07-30"><i class="fas fa-newspaper"></i><a href="https://www.albayan.ae/opinions/articles/2024-07-30-1.4912184" target="_blank">السرد الاستراتيجي للمؤسس.. «إدارة المعرفة»</a><span> –البيان - 30/07/2024</span></div>
+<div class="media-item"data-date="2024-07-14"><i class="fas fa-newspaper"></i><a href="https://www.albayan.ae/opinions/articles/2024-07-24-1.4909080" target="_blank">الرمزية والسردية ليوم عهد الاتحاد</a><span> –البيان - 14/07/2024</span></div>
+<div class="media-item"data-date="2023-09-05"><i class="fas fa-newspaper"></i><a href="https://www.albayan.ae/opinions/articles/2024-07-02-1.4898710" target="_blank">حوارات زايد الاستراتيجية بمرحلة التأسيس</a><span> – البيان – 05/09/2023</span></div>
+<div class="media-item"data-date="2024-06-14"><i class="fas fa-newspaper"></i><a href="https://www.albayan.ae/opinions/articles/2024-06-14-1.4889838" target="_blank">قيمة العلم برؤية زايد</a><span> – البيان -14/06/2024</span></div>
 
-<div class="media-item"><i class="fas fa-newspaper"></i><a href="https://www.albayan.ae/opinions/articles/11878" target="_blank">زايد وراشد.. «استراتيجية بناء الدولة»</a><span>  البيان -1/12/2024</span></div>
+<div class="media-item"data-date="2024-05-20"><i class="fas fa-newspaper"></i><a href="https://www.albayan.ae/opinions/articles/2024-05-20-1.4875491" target="_blank">ثلاثة محاور بنموذج زايد للتأسيس</a><span> –البيان - 20/05/2024</span></div>
+<div class="media-item"data-date="2024-05-06"><i class="fas fa-newspaper"></i><a href="https://www.albayan.ae/opinions/articles/2024-05-06-1.4867796" target="_blank">السرد الاستراتيجي للمؤسس.. «التجارب والدروس»</a><span> –البيان - 06/05/2024</span></div>
+<div class="media-item"data-date="2024-05-01"><i class="fas fa-newspaper"></i><a href="https://www.albayan.ae/opinions/articles/2024-05-01-1.4864761" target="_blank">رؤية زايد.. «معادلة الثروة والمسؤولية الوطنية»</a><span> –البيان - 01/05/2024</span></div>
 
-<div class="media-item"><i class="fas fa-newspaper"></i><a href="https://www.albayan.ae/opinions/articles/10933" target="_blank">زايد وراشد.. رفاق الاتحاد وروّاده</a><span>  البيان - 26/11/2024</span></div>
+<div class="media-item"data-date="2024-04-22"><i class="fas fa-newspaper"></i><a href="https://www.albayan.ae/opinions/articles/2024-04-22-1.4859312" target="_blank">السرد الاستراتيجي للمؤسس.. «المتابعة القيادية»</a><span> –البيان - 22/04/2024</span></div>
+<div class="media-item"data-date="2024-04-16"><i class="fas fa-newspaper"></i><a href="https://www.albayan.ae/opinions/articles/2024-04-16-1.4856670" target="_blank">منهاج زايد.. القدوة أساس التخطيط</a><span> –البيان - 16/04/2024</span></div>
+<div class="media-item"data-date="2024-03-19"><i class="fas fa-newspaper"></i><a href="https://www.albayan.ae/opinions/articles/2024-03-19-1.4841448" target="_blank">الوحدة والتضامن في فكر القائد المؤسس</a><span> –البيان - 19/03/2024</span></div>
+
+<div class="media-item"data-date="2021-09-23"><i class="fas fa-newspaper"></i><a href="https://www.albayan.ae/opinions/writing-star/2021-09-23-1.4253588" target="_blank">الإمارات مركز صناعة المستقبل</a><span> –23/09/2021</span></div>
+
+<div class="media-item"data-date="2021-07-06"><i class="fas fa-newspaper"></i><a href="https://www.albayan.ae/opinions/articles/2021-07-06-1.4202370" target="_blank">تحليل البيئة الخارجية PESTEL وأثرها في المنظومة الاستراتيجية</a><span> –6/7/2021</span></div>
+
+<div class="media-item"data-date="2021-06-20"><i class="fas fa-newspaper"></i><a href="https://www.albayan.ae/opinions/articles/2021-06-20-1.4190774" target="_blank">ما هي فرص التحسين في تحليل swot وانعكاساتها على المنظومة الاستراتيجية؟</a><span> –البيان - 20/6/2021</span></div>
+
+
+<div class="media-item"data-date="2021-06-14"><i class="fas fa-newspaper"></i><a href="https://www.albayan.ae/opinions/articles/2021-06-14-1.4186249" target="_blank">ما هي التحديات في تحليل swot وانعكاساتها على المنظومة الإستراتيجية</a><span>  البيان - 14/06/2021</span></div>
+
+<div class="media-item"data-date="2021-06-09"><i class="fas fa-newspaper"></i><a href="https://www.albayan.ae/opinions/articles/2021-06-09-1.4182754" target="_blank">التحليل البيئي الرباعي للمنظومة الاستراتيجية</a><span>  البيان - 09/06/2021</span></div>
+
+<div class="media-item"data-date="2021-05-19"><i class="fas fa-newspaper"></i><a href="https://www.albayan.ae/opinions/articles/2021-05-19-1.4167252" target="_blank">نبذة تاريخية عن المنظومة الاستراتيجية</a><span>  البيان -19/05/2021</span></div>
+
+
+<div class="media-item"data-date="2025-10-12"><i class="fas fa-newspaper"></i><a href="https://www.albayan.ae/opinions/articles/676568" target="_blank">زايد والذكاء الاصطناعي.. «التأهيل الرقمي»</a><span>  البيان -12/10/2025</span></div>
+
+<div class="media-item"data-date="2024-12-01"><i class="fas fa-newspaper"></i><a href="https://www.albayan.ae/opinions/articles/11878" target="_blank">زايد وراشد.. «استراتيجية بناء الدولة»</a><span>  البيان -1/12/2024</span></div>
+
+<div class="media-item"data-date="2024-11-26"><i class="fas fa-newspaper"></i><a href="https://www.albayan.ae/opinions/articles/10933" target="_blank">زايد وراشد.. رفاق الاتحاد وروّاده</a><span>  البيان - 26/11/2024</span></div>
+</div>
+<div class="pagination" id="pagination"></div>
 
 
   </section>
-  </center>
+ 
 </main>
   <!-- للتواصل -->
 <section class="section contact" id="contact">
@@ -175,6 +216,7 @@
   <footer>
     <p>جميع الحقوق محفوظة © د. سيف محمد الجابري 2025</p>
   </footer>
+<script src="articles-pager.js"></script>
 
 </body>
 </html>

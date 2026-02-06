@@ -189,7 +189,10 @@ textarea {
 }
 
 /* تنسيق المقالات */
+/* محاذاة قائمة المقالات لليمين */
 .media-list {
+  direction: rtl;
+    padding-right: 80px;
   display: grid;
   grid-template-columns: 1fr;
   gap: 10px;
@@ -205,9 +208,13 @@ textarea {
 .media-item:hover {
   background-color: #f0f0f0;
 }
+/* ترتيب المقال أفقيًا */
 .media-item i {
   margin-left: 8px;
   color: #003b67;
+  display:flex;
+  align-items:flex-start;
+  gap:8px;
 }
 
 
@@ -643,3 +650,94 @@ details > summary::after {
   float: none;
   margin-inline-start: auto;
 }
+
+
+
+
+/* رقم تسلسل المقال */
+.article-num {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 28px;
+  height: 28px;
+  margin-left: 10px; /* مسافة بين الرقم والنص */
+  border-radius: 50%;
+  background: #1e3a8a; /* أزرق داكن */
+  color: #fff;
+  font-size: 14px;
+  font-weight: 600;
+  flex-shrink: 0;
+}
+
+/* ترتيب عناصر المقال أفقيًا */
+.media-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+   padding-right: 50px;
+}
+
+
+/* أعلى الصفحة: مجموع المقالات + معلومات العرض */
+.articles-meta{
+  margin: 14px 0 16px;
+  padding-right: 10px; /* الإزاحة عن اليمين مثلما طلبت */
+}
+
+.articles-meta__line{
+  display:flex;
+  gap:12px;
+  align-items:center;
+  justify-content:flex-start;
+  flex-wrap:wrap;
+  font-size: 0.95rem;
+}
+
+/* شريط التنقل بين الصفحات */
+.pagination{
+  display:flex;
+  gap:12px;
+  align-items:center;
+  justify-content:center;
+  margin: 18px 0 8px;
+}
+
+.pager-btn{
+  padding:10px 14px;
+  border-radius:12px;
+  border:1px solid #d0d5dd;
+  background:#fff;
+  cursor:pointer;
+}
+
+.pager-btn:disabled{
+  opacity:0.5;
+  cursor:not-allowed;
+}
+
+.pager-label{
+  font-weight: 600;
+}
+
+/* إزاحة بسيطة لقائمة المقالات عن اليمين */
+.media-list{
+  padding-right: 10px;
+}
+
+/* رقم تسلسل المقال */
+.article-num{
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  background: #1e3a8a;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 700;
+  margin-left: 10px;  /* مسافة بين الرقم والمحتوى */
+  flex-shrink: 0;
+}
+
