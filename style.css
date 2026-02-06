@@ -1,59 +1,14 @@
-/* الخط العام */
-body {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  margin: 0;
-  padding: 0;
-  direction: rtl;
-  background-color: #f5f7fa;
-  color: #222;
-}
-.doctor-name {
-  color: #e67e22;
-  font-weight: 800;
-}
+/* =========================================================
+   Global Base
+   ========================================================= */
 
-/* Portfolio Responsive Grid (3 columns desktop, 2 tablet, 1 mobile) */
-.portfolio{
-  max-width: 980px;          /* يضمن 3 بطاقات فقط في الصف على الشاشات الكبيرة */
-  margin: 30px auto 0;
-  padding: 0 16px;
+/* الخط العام + إعدادات الصفحة */
+html { scroll-behavior: smooth; }
 
-  display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 20px;
-  justify-items: stretch;
-}
-
-/* اجعل البطاقة تتمدد داخل العمود بدل عرض ثابت */
-.thumb-card{
-  width: 100%;
-  max-width: 240px;          /* يمنع تضخّم البطاقة */
-  justify-self: center;
-}
-
-/* Tablet */
-@media (max-width: 900px){
-  .portfolio{
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-  }
-}
-
-/* Mobile */
-@media (max-width: 560px){
-  .portfolio{
-    grid-template-columns: 1fr;
-  }
-  .thumb-card{
-    max-width: 320px;
-  }
-}
-
-/* 2) توحيد الخط على كامل الموقع */
 html, body {
   font-family: "Cairo", sans-serif;
 }
 
-/* 3) ضمان أن كل العناصر ترث نفس الخط (مهم للأزرار والنماذج) */
 *,
 button,
 input,
@@ -62,30 +17,28 @@ textarea {
   font-family: inherit;
 }
 
+body {
+  margin: 0;
+  padding: 0;
+  direction: rtl;
+  background-color: #f5f7fa;
+  color: #222;
+}
 
-/* البانر */
+.doctor-name {
+  color: #e67e22;
+  font-weight: 800;
+}
+
+/* =========================================================
+   Banner
+   ========================================================= */
+
 .banner {
   background-color: #003b64;
-  color: white;
+  color: #fff;
   padding: 2rem;
   border-bottom: 4px solid #ffc107;
-}
-
-.banner-content {
-  display: flex;
-  flex-direction: row-reverse;
-  align-items: center;
-  justify-content: space-between;
-  flex-wrap: wrap;
-}
-
-.banner-content .text {
-  flex: 1;
-}
-
-.banner-content h1 {
-  font-size: 2rem;
-  margin: 0;
 }
 
 .banner-content {
@@ -101,6 +54,12 @@ textarea {
   flex-wrap: wrap;
 }
 
+.banner-content .text { flex: 1; }
+
+.banner-content h1 {
+  font-size: 2rem;
+  margin: 0;
+}
 
 .banner-content .image img {
   width: 140px;
@@ -108,8 +67,52 @@ textarea {
   border-radius: 50%;
   border: 3px solid #fff;
 }
+
+/* =========================================================
+   Main Navigation
+   ========================================================= */
+
+.nav-icon {
+  width: 24px;
+  height: 24px;
+  vertical-align: middle;
+}
+
+.main-nav {
+  background-color: #003b67;
+  text-align: center;
+  padding: 10px 0;
+  border-bottom: 4px solid #f4c000;
+}
+
+.main-nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.main-nav ul li {
+  display: inline-block;
+  margin: 0 10px;
+}
+
+.main-nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 5px 10px;
+}
+
+.main-nav ul li a:hover {
+  text-decoration: underline;
+}
+
+/* =========================================================
+   Section Navigation (Index links)
+   ========================================================= */
+
 .section-nav {
-  background-color: #003c71; /* أزرق غامق */
+  background-color: #003c71;
   border-radius: 10px;
   margin: 20px auto;
   padding: 15px;
@@ -124,9 +127,7 @@ textarea {
   text-align: center;
 }
 
-.section-nav-list li {
-  margin: 10px 0;
-}
+.section-nav-list li { margin: 10px 0; }
 
 .section-nav-list li a {
   color: #fff;
@@ -143,10 +144,12 @@ textarea {
   border-radius: 6px;
 }
 
+/* =========================================================
+   Sections
+   ========================================================= */
 
-/* الأقسام */
 .section {
-  background-color: white;
+  background-color: #fff;
   margin: 1rem auto;
   padding: 1.1rem;
   border-radius: 10px;
@@ -154,71 +157,6 @@ textarea {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.06);
 }
 
-
-/* شريط التنقل */
-
-.nav-icon {
-  width: 24px;
-  height: 24px;
-  vertical-align: middle;
-}
-
-.main-nav {
-  background-color: #003b67;
-  text-align: center;
-  padding: 10px 0;
-  border-bottom: 4px solid #f4c000;
-}
-.main-nav ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-.main-nav ul li {
-  display: inline-block;
-  margin: 0 10px;
-}
-.main-nav ul li a {
-  color: #fff;
-  text-decoration: none;
-  font-weight: bold;
-  padding: 5px 10px;
-}
-.main-nav ul li a:hover {
-  text-decoration: underline;
-}
-
-/* تنسيق المقالات */
-/* محاذاة قائمة المقالات لليمين */
-.media-list {
-  direction: rtl;
-    padding-right: 80px;
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 10px;
-  margin-top: 20px;
-}
-.media-item {
-  padding: 10px;
-  background-color: #f9f9f9;
-  border-right: 4px solid #003b67;
-  border-radius: 5px;
-  transition: background-color 0.3s ease;
-}
-.media-item:hover {
-  background-color: #f0f0f0;
-}
-/* ترتيب المقال أفقيًا */
-.media-item i {
-  margin-left: 8px;
-  color: #003b67;
-  display:flex;
-  align-items:flex-start;
-  gap:8px;
-}
-
-
-/* العناوين */
 .section h2 {
   color: #003b64;
   font-size: 1.5rem;
@@ -226,19 +164,33 @@ textarea {
   text-align: center;
 }
 
-/* البورتفوليو */
-
-.portfolio {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  gap: 20px;
-  justify-items: center;
-  margin-top: 30px;
+.section-icon {
+  width: 130px;
+  display: block;
+  margin: 25px auto;
 }
 
+/* =========================================================
+   Portfolio (Thumb Grid)
+   ========================================================= */
+
+/* Grid: 3 desktop / 2 tablet / 1 mobile */
+.portfolio {
+  max-width: 980px;
+  margin: 30px auto 0;
+  padding: 0 16px;
+
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 20px;
+  justify-items: stretch;
+}
 
 .thumb-card {
-  width: 200px;
+  width: 100%;
+  max-width: 240px;
+  justify-self: center;
+
   background: #ffffff;
   border-radius: 8px;
   text-align: center;
@@ -248,19 +200,16 @@ textarea {
   transition: transform 0.3s;
 }
 
-.thumb-card:hover {
-  transform: translateY(-5px);
-}
+.thumb-card:hover { transform: translateY(-5px); }
 
 .thumb-card img {
   width: 100%;
   height: 160px;
-  object-fit: contain; /* تغيير مهم */
-  background-color: #f0f0f0; /* لإبراز الصورة في حال وجود فراغات */
+  object-fit: contain;
+  background-color: #f0f0f0;
   border-top-left-radius: 8px;
   border-top-right-radius: 8px;
 }
-
 
 .thumb-card p {
   padding: 0.8rem;
@@ -268,6 +217,109 @@ textarea {
   font-size: 1rem;
 }
 
+/* Tablet */
+@media (max-width: 900px) {
+  .portfolio { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+
+/* Mobile */
+@media (max-width: 560px) {
+  .portfolio { grid-template-columns: 1fr; }
+  .thumb-card { max-width: 320px; }
+}
+
+/* =========================================================
+   Articles
+   ========================================================= */
+
+.media-list {
+  direction: rtl;
+  text-align: right;
+  padding-right: 10px;   /* الإزاحة المطلوبة عن اليمين */
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.media-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+
+  padding: 10px;
+  background-color: #f9f9f9;
+  border-right: 4px solid #003b67;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.media-item:hover { background-color: #f0f0f0; }
+
+.media-item i {
+  margin-left: 8px;
+  color: #003b67;
+  flex-shrink: 0;
+}
+
+/* رقم تسلسل المقال */
+.article-num {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  background: #1e3a8a;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 700;
+  margin-left: 10px; /* مسافة بين الرقم والمحتوى */
+  flex-shrink: 0;
+}
+
+/* أعلى الصفحة: مجموع المقالات + معلومات العرض */
+.articles-meta {
+  margin: 14px 0 16px;
+  padding-right: 10px;
+}
+
+.articles-meta__line {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  font-size: 0.95rem;
+}
+
+/* شريط التنقل بين الصفحات */
+.pagination {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  justify-content: center;
+  margin: 18px 0 8px;
+}
+
+.pager-btn {
+  padding: 10px 14px;
+  border-radius: 12px;
+  border: 1px solid #d0d5dd;
+  background: #fff;
+  cursor: pointer;
+}
+
+.pager-btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.pager-label { font-weight: 600; }
+
+/* =========================================================
+   Awards
+   ========================================================= */
 
 .awards-section {
   padding: 30px 60px;
@@ -290,6 +342,11 @@ textarea {
   line-height: 1.8;
   color: #333;
 }
+
+/* =========================================================
+   Layout Helpers
+   ========================================================= */
+
 .container {
   max-width: 900px;
   margin: 0 auto;
@@ -303,37 +360,29 @@ textarea {
   font-size: 1.1em;
 }
 
+/* =========================================================
+   Contact + Footer
+   ========================================================= */
 
-
-/* التواصل */
-.contact  p {
+.contact p {
   font-size: 1.1rem;
   color: #003b64;
- text-align: center; 
+  text-align: center;
 }
 
-/* الفوتر */
 footer {
   text-align: center;
   padding: 1rem;
   background-color: #003b64;
-  color: white;
+  color: #fff;
   margin-top: 2rem;
   font-size: 0.9rem;
 }
 
-/* استجابة للشاشات الصغيرة */
-@media (max-width: 768px) {
-  .banner-content {
-    flex-direction: column;
-    text-align: center;
-  }
+/* =========================================================
+   Zayed Model Page
+   ========================================================= */
 
-  .thumb-card {
-    width: 100%;
-    max-width: 300px;
-  }
-}
 .zayed-container {
   display: flex;
   flex-direction: column;
@@ -342,9 +391,9 @@ footer {
 }
 
 .zayed-text {
-  font-size: 1.2rem; /* تكبير الخط */
+  font-size: 1.2rem;
   line-height: 2;
-  padding: 0 1.5rem; /* تقليل الهوامش الجانبية */
+  padding: 0 1.5rem;
   text-align: justify;
 }
 
@@ -357,18 +406,23 @@ footer {
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
-@media (max-width: 768px) {
-  .zayed-text {
-    font-size: 1.1rem;
-    padding: 0 1rem;
-  }
+/* =========================================================
+   Specialization Page
+   ========================================================= */
+
+.specialization-intro,
+.specialization-content,
+.work-teams,
+.diplomas-courses {
+  max-width: 900px;
+  margin: 0 auto 40px auto;
+  padding: 0 20px;
+  line-height: 2;
+  text-align: justify;
 }
 
-.section-icon {
-  width: 130px;
-  display: block;
-  margin: 25px auto;
-}
+.specialization-content { max-width: 800px; font-size: 1.1em; }
+
 .specialization-content details {
   margin-bottom: 1rem;
   border: 1px solid #ccc;
@@ -385,18 +439,15 @@ footer {
   padding: 10px;
   background-color: #f1f4fb;
   border-radius: 6px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
 }
 
 .specialization-content summary:hover {
   background-color: #dbe6fb;
-}
-
-.specialization-intro, .specialization-content, .work-teams, .diplomas-courses {
-  max-width: 900px;
-  margin: 0 auto 40px auto;
-  padding: 0 20px;
-  line-height: 2;
-  text-align: justify;
 }
 
 .specialization-content ul.custom-list {
@@ -410,14 +461,10 @@ footer {
   font-size: 1.05em;
 }
 
-.specialization-content {
-  max-width: 800px;
-  margin: 0 auto;
-  text-align: justify;
-  line-height: 2;
-  font-size: 1.1em;
-  padding: 0 20px;
-}
+/* =========================================================
+   Floating UI
+   ========================================================= */
+
 .scroll-top-btn {
   position: fixed;
   bottom: 40px;
@@ -432,12 +479,8 @@ footer {
   transition: background-color 0.3s;
 }
 
-.scroll-top-btn:hover {
-  background-color: #0066aa;
-}
-html {
-  scroll-behavior: smooth;
-}
+.scroll-top-btn:hover { background-color: #0066aa; }
+
 .floating-icons {
   position: fixed;
   bottom: 20px;
@@ -458,24 +501,25 @@ html {
   transition: transform 0.3s;
 }
 
-.floating-icons a img:hover {
-  transform: scale(1.1);
-}
-/* ===== Qualifications Accordion ===== */
+.floating-icons a img:hover { transform: scale(1.1); }
 
-.mini-header{
-  text-align:center;
+/* =========================================================
+   Qualifications Accordion
+   ========================================================= */
+
+.mini-header {
+  text-align: center;
   margin: 10px 0 20px;
 }
 
-.mini-icon{
-  width: 52px;      /* صغير جدًا */
+.mini-icon {
+  width: 52px;
   height: 52px;
   object-fit: contain;
   opacity: 0.95;
 }
 
-.academic-accordion details{
+.academic-accordion details {
   margin: 12px 0;
   border: 1px solid rgba(0,0,0,0.12);
   border-radius: 12px;
@@ -484,20 +528,23 @@ html {
   overflow: hidden;
 }
 
-.academic-accordion summary{
+.academic-accordion summary {
   cursor: pointer;
   padding: 14px 16px;
   font-weight: 800;
   color: #fff;
-  background: linear-gradient(90deg, #003366, #005599); /* أزرق غامق مثل عناوين الصفحات */
+  background: linear-gradient(90deg, #003366, #005599);
   list-style: none;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
 }
 
-.academic-accordion summary::-webkit-details-marker{
-  display:none;
-}
+.academic-accordion summary::-webkit-details-marker { display: none; }
 
-.academic-accordion summary::after{
+.academic-accordion summary::after {
   content: "⌄";
   float: left;
   font-weight: 700;
@@ -505,38 +552,32 @@ html {
   transition: transform .2s ease;
 }
 
-.academic-accordion details[open] summary::after{
-  transform: rotate(180deg);
-}
+.academic-accordion details[open] summary::after { transform: rotate(180deg); }
 
-.academic-accordion .accordion-body{
-  padding: 14px 16px;
-}
+.academic-accordion .accordion-body { padding: 14px 16px; }
 
-.academic-text{
-  margin: 0;
-  line-height: 1.9;
-}
+.academic-text { margin: 0; line-height: 1.9; }
 
-/* إبراز الأرقام */
-.num{
+/* إبراز أرقام (نسخة قديمة خفيفة) */
+.num {
   display: inline-block;
   padding: 2px 8px;
   margin: 0 3px;
   border-radius: 999px;
-  background: rgba(255,204,0,0.18); /* أصفر خفيف */
+  background: rgba(255,204,0,0.18);
   border: 1px solid rgba(255,204,0,0.45);
   color: #003366;
   font-weight: 800;
 }
-/* قوائم داخل Accordion (مثل qualifications) */
-.academic-accordion ul.custom-list{
+
+/* قوائم داخل Accordion */
+.academic-accordion ul.custom-list {
   list-style: "• ";
   padding-right: 20px;
   margin: 0;
 }
 
-.academic-accordion ul.custom-list li{
+.academic-accordion ul.custom-list li {
   margin-bottom: 12px;
   font-size: 1.05em;
   line-height: 1.9;
@@ -549,6 +590,7 @@ html {
   padding: 14px 18px;
   border-radius: 10px;
 }
+
 /* العناوين الفرعية داخل العناوين الرئيسية */
 .academic-accordion details details > summary {
   background: linear-gradient(135deg, #e8f1fb, #d6e7f8);
@@ -557,76 +599,57 @@ html {
   padding: 12px 16px;
   border-radius: 8px;
   margin-top: 10px;
-
-  /* التظليل */
   box-shadow: 0 4px 10px rgba(11, 60, 109, 0.15);
-
-  /* خط فاصل بصري */
   border-right: 4px solid #0b3c6d;
 }
+
 .academic-accordion details details > summary:hover {
   background: linear-gradient(135deg, #dbeaf9, #c8ddf5);
   cursor: pointer;
 }
+
 .academic-accordion details details details > summary {
   background: #f9fbfe;
   color: #0b3c6d;
   border: 1px solid #d6e3f3;
   box-shadow: none;
 }
-.social-icons img {
-  width: 28px;
-  height: 28px;
-  transition: transform 0.3s ease;
-}
 
-.social-icons a:hover img {
-  transform: scale(1.15);
-}
 /* =========================================================
-   تمييز الأرقام (Numbers Highlight)
+   Numbers Highlight (New)
    ========================================================= */
 
-/* النمط الأساسي للأرقام */
 .num-highlight {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-
   min-width: 36px;
   height: 28px;
   padding: 0 10px;
   margin: 0 4px;
-
   border-radius: 999px;
   background: linear-gradient(135deg, #0b3c68, #0f5fa8);
   color: #ffffff;
-
   font-weight: 700;
   font-size: 0.95em;
   line-height: 1;
-
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
   vertical-align: middle;
   white-space: nowrap;
 }
 
-/* نسخة ذهبية للأرقام الكبيرة أو النِّسب */
 .num-highlight.gold {
   background: linear-gradient(135deg, #c7922c, #e0b24a);
   color: #1a1a1a;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.18);
 }
 
-/* تحسين القراءة داخل القوائم */
-.custom-list li .num-highlight {
-  margin-inline: 6px;
-}
+.custom-list li .num-highlight { margin-inline: 6px; }
 
-/* =========================================================
-   تحسينات العرض على الموبايل
-   ========================================================= */
 @media (max-width: 768px) {
+  .banner-content { flex-direction: column; text-align: center; }
+  .zayed-text { font-size: 1.1rem; padding: 0 1rem; }
+
   .num-highlight {
     min-width: 32px;
     height: 26px;
@@ -634,110 +657,3 @@ html {
     padding: 0 8px;
   }
 }
-
-/* =========================================================
-   تحسينات طفيفة للـ accordion (اختياري لكنها موصى بها)
-   ========================================================= */
-.academic-accordion summary,
-details > summary {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 12px;
-}
-
-details > summary::after {
-  float: none;
-  margin-inline-start: auto;
-}
-
-
-
-
-/* رقم تسلسل المقال */
-.article-num {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  min-width: 28px;
-  height: 28px;
-  margin-left: 10px; /* مسافة بين الرقم والنص */
-  border-radius: 50%;
-  background: #1e3a8a; /* أزرق داكن */
-  color: #fff;
-  font-size: 14px;
-  font-weight: 600;
-  flex-shrink: 0;
-}
-
-/* ترتيب عناصر المقال أفقيًا */
-.media-item {
-  display: flex;
-  align-items: flex-start;
-  gap: 8px;
-   padding-right: 30px;
-}
-
-
-/* أعلى الصفحة: مجموع المقالات + معلومات العرض */
-.articles-meta{
-  margin: 14px 0 16px;
-  padding-right: 10px; /* الإزاحة عن اليمين مثلما طلبت */
-}
-
-.articles-meta__line{
-  display:flex;
-  gap:12px;
-  align-items:center;
-  justify-content:flex-start;
-  flex-wrap:wrap;
-  font-size: 0.95rem;
-}
-
-/* شريط التنقل بين الصفحات */
-.pagination{
-  display:flex;
-  gap:12px;
-  align-items:center;
-  justify-content:center;
-  margin: 18px 0 8px;
-}
-
-.pager-btn{
-  padding:10px 14px;
-  border-radius:12px;
-  border:1px solid #d0d5dd;
-  background:#fff;
-  cursor:pointer;
-}
-
-.pager-btn:disabled{
-  opacity:0.5;
-  cursor:not-allowed;
-}
-
-.pager-label{
-  font-weight: 600;
-}
-
-/* إزاحة بسيطة لقائمة المقالات عن اليمين */
-.media-list{
-  padding-right: 10px;
-}
-
-/* رقم تسلسل المقال */
-.article-num{
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  min-width: 28px;
-  height: 28px;
-  border-radius: 50%;
-  background: #1e3a8a;
-  color: #fff;
-  font-size: 14px;
-  font-weight: 700;
-  margin-left: 10px;  /* مسافة بين الرقم والمحتوى */
-  flex-shrink: 0;
-}
-
