@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", () => {
-  const PAGE_SIZE = 20;
+  const PAGE_SIZE = 40;
 
   const list = document.querySelector(".media-list");
   const meta = document.getElementById("articlesMeta");
