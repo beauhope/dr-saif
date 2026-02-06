@@ -675,7 +675,7 @@ details > summary::after {
   display: flex;
   align-items: flex-start;
   gap: 8px;
-   padding-right: 150px;
+   padding-right: 30px;
 }
 
 
